@@ -1,0 +1,9 @@
+root: true
+extends: "@sethb0/mfllc"
+parser: "babel-eslint"
+env:
+  node: true
+globals:
+  Map: false
+  Promise: false
+  Set: false
