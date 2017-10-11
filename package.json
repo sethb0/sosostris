@@ -1,14 +1,15 @@
 {
-  "name": "@sethb0/spread",
+  "name": "@sethb0/sosostris",
   "private": true,
   "version": "0.1.0",
   "description": "A simple tool for laying out Tarot spreads",
   "scripts": {
+    "linkstuff": "npm link bootstrap-vue",
     "start": "node server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sethb0/spread.git"
+    "url": "git+https://github.com/sethb0/sosostris.git"
   },
   "keywords": [
     "Tarot"
@@ -16,9 +17,9 @@
   "author": "Seth Blumberg <sethb@pobox.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sethb0/spread/issues"
+    "url": "https://github.com/sethb0/sosostris/issues"
   },
-  "homepage": "https://github.com/sethb0/spread#readme",
+  "homepage": "https://github.com/sethb0/sosostris#readme",
   "engines": {
     "node": "^8.6.0",
     "npm": "^5.5.1"
@@ -55,8 +56,8 @@
     "vue-loader": "^13.0.5",
     "vue-router": "^2.7.0",
     "vue-template-compiler": "^2.4.4",
-    "vuex": "^2.4.1",
     "webapp-manifest-plugin": "0.0.4",
+    "webpack": "^3.6.0",
     "webpack-chunk-hash": "^0.4.0",
     "webpack-stream": "^4.0.0",
     "webpack-subresource-integrity": "^1.0.1"
@@ -67,18 +68,12 @@
     "babel-register": "^6.26.0",
     "dateformat": "^3.0.2",
     "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-compose": "^4.0.0",
     "koa-helmet": "^3.2.0",
     "koa-json": "^2.0.2",
-    "koa-session-minimal": "^3.0.4",
-    "koa-simple-router": "^0.2.0",
+    "koa-morgan": "^1.0.1",
     "koa-sslify": "^2.1.2",
-    "mongodb": "^2.2.31",
     "nunjucks": "^3.0.1",
-    "resolve-path": "^1.3.3",
-    "superagent": "^3.6.1",
-    "uid-safe": "^2.1.5"
+    "resolve-path": "^1.3.3"
   },
   "babel": {
     "plugins": [

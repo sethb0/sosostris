@@ -1,0 +1,7 @@
+env:
+  browser: true
+  node: false
+plugins:
+  - html
+settings:
+  html/report-bad-indent: warn

@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "transform-object-rest-spread"
+  ],
+  "presets": [
+    [
+      "env",
+      {
+        "debug": true,
+        "exclude": [
+          "transform-async-to-generator",
+          "transform-regenerator"
+        ],
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "> 5%",
+            "> 2.5% in US",
+            "last 1 edge version",
+            "not IE < 12"
+          ]
+        },
+        "useBuiltIns": true
+      }
+    ],
+    "bluebird"
+  ]
+}

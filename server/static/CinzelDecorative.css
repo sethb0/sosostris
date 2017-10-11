@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'),
+    url(https://fonts.gstatic.com/s/cinzeldecorative/v5/fmgK7oaJJIXAkhd9798yQgFmqWZZiD2TZhWZ_nwGhk8.woff2) format('woff2'),
+    url(https://fonts.gstatic.com/s/cinzeldecorative/v5/fmgK7oaJJIXAkhd9798yQiIQXpsbKR_wBTo1n6IkW90.ttf) format('truetype');
+}

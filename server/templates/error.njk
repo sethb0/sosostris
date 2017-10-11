@@ -1,0 +1,21 @@
+{% extends 'base.njk' %}
+
+{% block title %}{{ super() }}: Error {{ statusCode }}{% endblock %}
+
+{% block outerheader %}
+  <h1 class="card-header brand-font display-2 mb-3">
+    Error {{ statusCode }}
+    {%- if code %}
+    <small>{{ code }}</small>
+    {%- endif %}
+  </h1>
+{% endblock %}
+
+{% block body %}
+  <div class="card-block">
+    <p class="card-text lead">{{ message }}</p>
+    {%- if detail %}
+    <p class="card-text">{{ detail }}</p>
+    {%- endif %}
+  </div>
+{% endblock %}

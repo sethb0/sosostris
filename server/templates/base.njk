@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
+  <base href="/">
+  <title>{% block title %}{{ TITLE }}{% endblock %}</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous"
+    href="CinzelDecorative.css" integrity="{{ INTEGRITY['CinzelDecorative.css'] }}">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous"
+    href="server.css" integrity="{{ INTEGRITY['server.css'] }}">
+  <link rel="stylesheet" type="text/css" crossorigin="anonymous"
+    href="bootstrap.min.css" integrity="{{ INTEGRITY['bootstrap.min.css'] }}">
+</head>
+<body>
+  <nav class="navbar bg-primary fixed-top">
+    <div class="navbar-brand">
+      <img src="navbar-brand.png" alt="{{ NAVBAR_ALT }}" class="mr-3">
+      {{ TITLE }}
+    </div>
+    {%- block navbaradditional %}{% endblock %}
+  </nav>
+  <div class="container">
+    <div class="card w-75 mx-auto mb-3">
+      {% block outerheader -%}
+      <h4 class="card-header brand-font">{% block header %}{% endblock %}</h1>
+      {%- endblock %}
+      {%- block body %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>
